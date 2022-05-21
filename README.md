@@ -1,10 +1,9 @@
 # Deb Installer
 
-Package Installer for CutefishOS.
+Package Installer for Cirily.
 
-## Dependencies
+## Dependencies (For Ubuntu/Debian)
 
-Debian/Ubuntu Dependencies:
 ```shell
 sudo apt install cmake debhelper qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev libqapt-dev libapt-pkg-dev
 ```
