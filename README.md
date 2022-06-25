@@ -1,6 +1,6 @@
 # Deb Installer
 
-Package Installer for Cirily.
+Package Installer for Piscesys.
 
 ## Dependencies (For Ubuntu/Debian)
 
