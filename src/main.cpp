@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2021 Cutefish Technology Co., Ltd.
+ * Copyright (C) 2021 Pisces Technology Co., Ltd.
  *
- * Author:     Reion Wong <reion@cutefishos.com>
+ * Author:     Reion Wong <reion@piscesys.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,12 +35,12 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     app.setQuitOnLastWindowClosed(true);
 
-    qmlRegisterUncreatableType<DebInstaller>("Cutefish.DebInstaller", 1, 0,
+    qmlRegisterUncreatableType<DebInstaller>("Pisces.DebInstaller", 1, 0,
                                              "DebInstaller", "error");
 
     // Translations
     QLocale locale;
-    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/cutefish-debinstaller/translations/").arg(locale.name());
+    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/pisces-debinstaller/translations/").arg(locale.name());
     if (QFile::exists(qmFilePath)) {
         QTranslator *translator = new QTranslator(app.instance());
         if (translator->load(qmFilePath)) {
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    qmlRegisterUncreatableType<DebInstaller>("Cutefish.DebInstaller", 1, 0, "DebInstaller", "error");
+    qmlRegisterUncreatableType<DebInstaller>("Pisces.DebInstaller", 1, 0, "DebInstaller", "error");
 
     QCommandLineParser parser;
     parser.addHelpOption();

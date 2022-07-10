@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2021 Cutefish Technology Co., Ltd.
+ * Copyright (C) 2021 Pisces Technology Co., Ltd.
  *
- * Author:     Reion Wong <reion@cutefishos.com>
+ * Author:     Reion Wong <reion@piscesys.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ import QtQuick.Window 2.12
 import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.12
 import FishUI 1.0 as FishUI
-import Cutefish.DebInstaller 1.0
+import Pisces.DebInstaller 1.0
 
 Item {
     Component {
